@@ -1,0 +1,13 @@
+<h1 class="mt-4 text-primary">DBZ Personajes</h1>
+<hr>
+
+<div class="row">
+  <div class="col-md-6 col-lg-7">
+    <dbz-list [characterList]="characters" (onDeleteCharacter)="deleteCharacter($event)" />
+  </div>
+
+  <div class="col-md-6 col-lg-5">
+    <hr class="d-md-none d-sm-block mt-4">
+    <dbz-add-character (onNewCharacter)="addCharacter($event)" />
+  </div>
+</div>
